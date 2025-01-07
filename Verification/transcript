@@ -1,0 +1,1084 @@
+# Reading pref.tcl
+# //  Questa Sim-64
+# //  Version 2021.3_1 linux_x86_64 Aug 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+project open /u/satyajit/ECE571-F24/UART_/UART_UVM
+# Loading project UART_UVM
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb
+# vsim -voptargs="+acc" work.tb 
+# Start time: 22:03:31 on Dec 30,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb
+# End time: 22:04:40 on Dec 30,2024, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.tb 
+# Start time: 22:04:40 on Dec 30,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+add wave -position insertpoint sim:/tb/*
+# ** UI-Msg: (vish-4014) No objects found matching '/tb/*'.
+add wave -position insertpoint sim:/tb/dut/*
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# Break key hit
+# Simulation stop requested.
+# Causality operation skipped due to absence of debug database file
+add wave -position insertpoint sim:/tb/*
+# ** UI-Msg: (vish-4014) No objects found matching '/tb/*'.
+add log -class sim:/classes_pkg::driver
+add wave -position insertpoint sim:/classes_pkg::driver::*
+# ** UI-Msg: (vish-4014) No objects found matching '/classes_pkg::driver::*'.
+add wave -position insertpoint sim:/tb/vif/*
+add wave -position insertpoint sim:/tb_sv_unit/*
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_sv_unit/*'.
+run -all
+# Break key hit
+# Simulation stop requested.
+# Break key hit
+run -all
+# Break key hit
+# Simulation stop requested.
+# Break key hit
+# Break key hit
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# Break key hit
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 0
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 204
+# srx: 204
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 0
+# [SCO] 2 : DRV : 102, MON : 0
+# [SCO] : DRV : 102, MON : 0
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 0
+# [SCO] 2 : DRV : 202, MON : 0
+# [SCO] : DRV : 202, MON : 0
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 6
+# srx:   6
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 0
+# [SCO] 2 : DRV : 3, MON : 0
+# [SCO] : DRV : 3, MON : 0
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 0
+# [SCO] 2 : DRV : 178, MON : 0
+# [SCO] : DRV : 178, MON : 0
+# Data Not Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850015 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.tb
+# End time: 22:49:37 on Dec 30,2024, Elapsed time: 0:44:57
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" work.tb 
+# Start time: 22:49:37 on Dec 30,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 204
+# srx: 204
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 204
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 204
+# [SCO] 2 : DRV : 202, MON : 204
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 6
+# srx:   6
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 6
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 6
+# [SCO] 2 : DRV : 178, MON : 6
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+restart -f
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 204
+# srx: 204
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 204
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 204
+# [SCO] 2 : DRV : 202, MON : 204
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 6
+# srx:   6
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 6
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 6
+# [SCO] 2 : DRV : 178, MON : 6
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [MON] : DATA SEND on UART TX 255
+# [DRV]: Data Sent : 102
+# srx: 255
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 255
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 255
+# [SCO] 2 : DRV : 202, MON : 255
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [MON] : DATA SEND on UART TX 255
+# [DRV]: Data Sent : 3
+# srx: 255
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 255
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 255
+# [SCO] 2 : DRV : 178, MON : 255
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 204
+# srx: 204
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 204
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 204
+# [SCO] 2 : DRV : 202, MON : 204
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 6
+# srx:   6
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 6
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 6
+# [SCO] 2 : DRV : 178, MON : 6
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 152
+# srx: 152
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 152
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 152
+# [SCO] 2 : DRV : 202, MON : 152
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 12
+# srx:  12
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 12
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 12
+# [SCO] 2 : DRV : 178, MON : 12
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+add wave -position insertpoint sim:/tb/dut/*
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 204
+# srx: 204
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 204
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 204
+# [SCO] 2 : DRV : 202, MON : 204
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 6
+# srx:   6
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 6
+# Data Not Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 6
+# [SCO] 2 : DRV : 178, MON : 6
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 102
+# srx: 102
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 102
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 102
+# [SCO] 2 : DRV : 202, MON : 102
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 3
+# srx:   3
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 3
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 3
+# [SCO] 2 : DRV : 178, MON : 3
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# rrx: 110
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 0, MON : 0
+# [SCO] 2 : DRV : 110, MON : 0
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# srx[          0]: 0
+# srx[          1]: 1
+# srx[          2]: 1
+# srx[          3]: 0
+# srx[          4]: 0
+# srx[          5]: 1
+# srx[          6]: 1
+# srx[          7]: 0
+# [MON] : DATA SEND on UART TX 102
+# srx: 102
+# [SCO]: Started
+# [SCO] 1 : DRV : 110, MON : 110
+# [SCO] 2 : DRV : 102, MON : 110
+# [SCO] : DRV : 102, MON : 102
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# rrx: 202
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 102, MON : 102
+# [SCO] 2 : DRV : 202, MON : 102
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# srx[          0]: 1
+# srx[          1]: 1
+# srx[          2]: 0
+# srx[          3]: 0
+# srx[          4]: 0
+# srx[          5]: 0
+# srx[          6]: 0
+# srx[          7]: 0
+# [MON] : DATA SEND on UART TX 3
+# srx:   3
+# [SCO]: Started
+# [SCO] 1 : DRV : 202, MON : 202
+# [SCO] 2 : DRV : 3, MON : 202
+# [SCO] : DRV : 3, MON : 3
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# rrx: 178
+# MR sent rcvd data to scb
+# MONITOR TRIGERRING SCB
+# [SCO]: Started
+# [SCO] 1 : DRV : 3, MON : 3
+# [SCO] 2 : DRV : 178, MON : 3
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN]:Oper : Receive, Din : 176
+# [DRV]: Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 102
+# [DRV]: Data Sent : 102
+# [MON] : DATA SEND on UART TX 102
+# [SCO] : DRV : 102, MON : 102
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 237
+# [DRV]: Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Transmit, Din : 3
+# [DRV]: Data Sent : 3
+# [MON] : DATA SEND on UART TX 3
+# [SCO] : DRV : 3, MON : 3
+# Data Matched
+# ----------------------------------
+# [GEN]:Oper : Receive, Din : 190
+# [DRV]: Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
+# Compile of Uart_Rx.sv was successful.
+# Compile of Uart_Top.sv was successful.
+# Compile of Uart_Tx.sv was successful.
+# Compile of Driver.sv was successful.
+# Compile of Environment.sv was successful.
+# Compile of Generator.sv was successful.
+# Compile of Monitor.sv was successful.
+# Compile of Scoreboard.sv was successful.
+# Compile of tb.sv was successful.
+restart -f
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading work.classes_pkg(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uarttx(fast)
+# Loading work.uartrx(fast)
+# Compile of Transaction.sv was successful.
+# Compile of Package.sv was successful.
+# Compile of uart_if.sv was successful.
+# 12 compiles, 0 failed with no errors.
+run -all
+# [DRV] : RESET DONE
+# ----------------------------------------
+# [GEN] : Oper : Receive, Din : 176
+# [DRV] : Data RCVD : 110
+# [MON] : DATA RCVD RX 110
+# [SCO] : DRV : 110, MON : 110
+# Data Matched
+# ----------------------------------
+# [GEN] : Oper : Transmit, Din : 102
+# [DRV] : Data Sent : 102
+# [MON] : DATA SEND on UART TX 102
+# [SCO] : DRV : 102, MON : 102
+# Data Matched
+# ----------------------------------
+# [GEN] : Oper : Receive, Din : 237
+# [DRV] : Data RCVD : 202
+# [MON] : DATA RCVD RX 202
+# [SCO] : DRV : 202, MON : 202
+# Data Matched
+# ----------------------------------
+# [GEN] : Oper : Transmit, Din : 3
+# [DRV] : Data Sent : 3
+# [MON] : DATA SEND on UART TX 3
+# [SCO] : DRV : 3, MON : 3
+# Data Matched
+# ----------------------------------
+# [GEN] : Oper : Receive, Din : 190
+# [DRV] : Data RCVD : 178
+# [MON] : DATA RCVD RX 178
+# [SCO] : DRV : 178, MON : 178
+# Data Matched
+# ----------------------------------
+# ** Note: $finish    : /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv(56)
+#    Time: 138850005 ps  Iteration: 1  Instance: /tb
+# 1
+# Break in Task classes_pkg/environment::post_test at /u/satyajit/ECE571-F24/UART_/Verification/Environment.sv line 56
